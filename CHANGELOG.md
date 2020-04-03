@@ -2,6 +2,9 @@
 
 ## Next Version
 
+#### Fixed
+- Set `preActions` and `postActions` on the `build` step of a TargetScheme. [#823](https://github.com/yonaskolb/XcodeGen/pull/823) @brentleyjones
+
 ## 2.15.1
 
 #### Fixed

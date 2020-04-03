@@ -313,7 +313,9 @@ extension Scheme {
             name: name,
             build: .init(
                 targets: Scheme.buildTargets(for: target, project: project),
-                buildImplicitDependencies: targetScheme.buildImplicitDependencies
+                buildImplicitDependencies: targetScheme.buildImplicitDependencies,
+                preActions: targetScheme.preActions,
+                postActions: targetScheme.postActions
             ),
             run: .init(
                 config: debugConfig,
