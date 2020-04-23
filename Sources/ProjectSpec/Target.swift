@@ -56,9 +56,6 @@ public struct Target: ProjectTarget {
         if let fileExtension = type.fileExtension {
             filename += ".\(fileExtension)"
         }
-        if type == .staticLibrary {
-            filename = "lib\(filename)"
-        }
         return filename
     }
 
@@ -89,7 +86,8 @@ public struct Target: ProjectTarget {
         self.type = type
         self.platform = platform
         self.deploymentTarget = deploymentTarget
-        self.productName = productName ?? name
+        let defaultProductName = type == .staticLibrary ? "lib\(name)" : name
+        self.productName = productName ?? defaultProductName
         self.settings = settings
         self.configFiles = configFiles
         self.sources = sources
@@ -159,19 +157,24 @@ extension Target {
                     let platformPrefix = platformTarget["platformPrefix"] as? String ?? ""
                     let newTargetName = platformPrefix + targetName + platformSuffix
 
+                    let type = platformTarget["type"] as? String
+                    let isStaticLibrary = type == "library.static"
+                    let productName = isStaticLibrary ? "lib\(targetName)" : targetName
+
                     var settings = platformTarget["settings"] as? JSONDictionary ?? [:]
                     if settings["configs"] != nil || settings["groups"] != nil || settings["base"] != nil {
                         var base = settings["base"] as? JSONDictionary ?? [:]
                         if base["PRODUCT_NAME"] == nil {
-                            base["PRODUCT_NAME"] = targetName
+                            base["PRODUCT_NAME"] = productName
                         }
                         settings["base"] = base
                     } else {
                         if settings["PRODUCT_NAME"] == nil {
-                            settings["PRODUCT_NAME"] = targetName
+                            settings["PRODUCT_NAME"] = productName
                         }
                     }
-                    platformTarget["productName"] = targetName
+
+                    platformTarget["productName"] = productName
                     platformTarget["settings"] = settings
                     if let deploymentTargets = target["deploymentTarget"] as? [String: Any] {
                         platformTarget["deploymentTarget"] = deploymentTargets[platform]
@@ -246,13 +249,14 @@ extension Target: NamedJSONDictionaryConvertible {
     public init(name: String, jsonDictionary: JSONDictionary) throws {
         let resolvedName: String = jsonDictionary.json(atKeyPath: "name") ?? name
         self.name = resolvedName
-        productName = jsonDictionary.json(atKeyPath: "productName") ?? resolvedName
         let typeString: String = try jsonDictionary.json(atKeyPath: "type")
         if let type = PBXProductType(string: typeString) {
             self.type = type
         } else {
             throw SpecParsingError.unknownTargetType(typeString)
         }
+        let resolvedProductName = type == .staticLibrary ? "lib\(resolvedName)" : resolvedName
+        productName = jsonDictionary.json(atKeyPath: "productName") ?? resolvedProductName
         let platformString: String = try jsonDictionary.json(atKeyPath: "platform")
         if let platform = Platform(rawValue: platformString) {
             self.platform = platform

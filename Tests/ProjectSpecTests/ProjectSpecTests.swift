@@ -53,6 +53,7 @@ class ProjectSpecTests: XCTestCase {
                 name: "MyStaticLibrary",
                 type: .staticLibrary,
                 platform: .iOS,
+                productName: "libMyStaticLibrary",
                 settings: Settings(buildSettings: [:])
             )
             let dynamicLibrary = Target(
@@ -92,6 +93,31 @@ class ProjectSpecTests: XCTestCase {
                 try expect(Version.parse(2).deploymentTarget) == "2.0"
                 try expect(Version.parse(2.0).deploymentTarget) == "2.0"
                 try expect(Version.parse(2.1).deploymentTarget) == "2.1"
+            }
+        }
+    }
+
+    func testProductName() {
+        describe {
+
+            let staticLibrary = try! Target(
+                name: "Test",
+                jsonDictionary: [
+                    "platform": Platform.iOS.rawValue,
+                    "type": PBXProductType.staticLibrary.rawValue
+                ]
+            )
+            let framework = try! Target(
+                name: "Test",
+                jsonDictionary: [
+                    "platform": Platform.iOS.rawValue,
+                    "type": PBXProductType.framework.rawValue
+                ]
+            )
+
+            $0.it("has correct productName") {
+                try expect(staticLibrary.productName) == "libTest"
+                try expect(framework.productName) == "Test"
             }
         }
     }

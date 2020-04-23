@@ -2428,7 +2428,7 @@
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-macOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -2443,7 +2443,7 @@
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-macOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -2474,7 +2474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-watchOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -2597,7 +2597,7 @@
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-macOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -2678,7 +2678,7 @@
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-macOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -2692,7 +2692,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-iOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2968,7 +2968,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-tvOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -3041,7 +3041,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-tvOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -3257,7 +3257,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-watchOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -3849,7 +3849,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-iOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3901,7 +3901,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-watchOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -4051,7 +4051,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-watchOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -4062,7 +4062,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-watchOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -4077,7 +4077,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-tvOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -4202,7 +4202,7 @@
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-macOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -4279,7 +4279,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-tvOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -4588,7 +4588,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-iOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4737,7 +4737,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-watchOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -5144,7 +5144,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-iOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5211,7 +5211,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-iOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5508,7 +5508,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-tvOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -5547,7 +5547,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-tvOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -5696,7 +5696,7 @@
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-macOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -5710,7 +5710,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.project.StaticLibrary-ObjC-iOS";
-				PRODUCT_NAME = StaticLibrary_ObjC;
+				PRODUCT_NAME = libStaticLibrary_ObjC;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
